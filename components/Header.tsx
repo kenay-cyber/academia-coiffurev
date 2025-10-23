@@ -26,7 +26,7 @@ const Header: React.FC = () => {
             <NavLink to="/galerie" className={getNavLinkClass}>Galerie</NavLink>
             <NavLink to="/contact" className={getNavLinkClass}>Contact</NavLink>
             <NavLink to="/commander" className="ml-4 bg-brand-gold text-brand-dark font-bold py-2 px-4 rounded-full hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105">
-              Commander
+              Prendre RDV
             </NavLink>
           </div>
           <div className="md:hidden">
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
             <NavLink to="/galerie" className={getNavLinkClass} onClick={() => setIsOpen(false)}>Galerie</NavLink>
             <NavLink to="/contact" className={getNavLinkClass} onClick={() => setIsOpen(false)}>Contact</NavLink>
             <NavLink to="/commander" className="block text-center mt-2 bg-brand-gold text-brand-dark font-bold py-2 px-4 rounded-full hover:bg-yellow-300 transition-all duration-300" onClick={() => setIsOpen(false)}>
-              Commander
+              Prendre RDV
             </NavLink>
           </div>
         )}
