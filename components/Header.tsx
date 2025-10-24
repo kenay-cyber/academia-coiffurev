@@ -14,10 +14,10 @@ const Header: React.FC = () => {
 
   return (
     <header className="bg-black/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg shadow-brand-gold/10">
-      <nav className="container mx-auto px-6 py-4">
+      <nav className="container mx-auto px-6 py-2">
         <div className="flex items-center justify-between">
-          <NavLink to="/" className="text-2xl font-bold text-brand-gold">
-            ACADEMIA COIFFURE
+          <NavLink to="/" className="flex items-center">
+             <img src="https://i.postimg.cc/fT9Y4sv9/Whats-App-Image-2025-10-21-at-13-08-14.jpg" alt="ACADEMIA COIFFURE Logo" className="h-14" />
           </NavLink>
           <div className="hidden md:flex items-center space-x-4">
             <NavLink to="/" className={getNavLinkClass} end>Accueil</NavLink>

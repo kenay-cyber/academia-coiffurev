@@ -50,19 +50,12 @@ const whyChooseUsData = [
 const HomePage: React.FC = () => {
   return (
     <div>
-      {/* Hero Section with Video */}
-      <section className="relative h-[90vh] flex items-center justify-center text-center text-white overflow-hidden">
+      {/* Hero Section */}
+      <section 
+        className="relative h-[90vh] flex items-center justify-center text-center text-white bg-cover bg-center"
+        style={{ backgroundImage: "url('https://i.postimg.cc/rw2xMHh0/Whats-App-Image-2025-10-22-at-09-58-21.jpg')" }}
+      >
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-10"></div>
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute z-0 w-auto min-w-full min-h-full max-w-none"
-        >
-          <source src="https://videos.pexels.com/video-files/3253459/3253459-hd_1920_1080_25fps.mp4" type="video/mp4" />
-          Votre navigateur ne supporte pas la vidéo.
-        </video>
         <div className="relative z-20 p-6">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight text-brand-gold drop-shadow-lg animate-fade-in">ACADEMIA COIFFURE</h1>
           <p className="text-lg md:text-2xl mb-2 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>L'art de la coiffure masculine et du soin capillaire</p>

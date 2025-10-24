@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div>
-            <h3 className="text-xl font-bold text-brand-gold mb-4">ACADEMIA COIFFURE</h3>
+            <img src="https://i.postimg.cc/fT9Y4sv9/Whats-App-Image-2025-10-21-at-13-08-14.jpg" alt="ACADEMIA COIFFURE Logo" className="h-16 mb-4 mx-auto md:mx-0" />
             <p className="text-sm">L’art de la coiffure masculine et du soin capillaire, directement chez vous à Kinshasa.</p>
           </div>
           <div>

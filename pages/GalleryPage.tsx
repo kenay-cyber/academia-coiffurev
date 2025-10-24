@@ -68,7 +68,9 @@ const GalleryModal: React.FC<{
             <div className="relative w-full max-w-4xl max-h-full bg-brand-dark rounded-lg shadow-2xl p-4 flex flex-col" onClick={e => e.stopPropagation()}>
                 <div className="flex-grow flex items-center justify-center">
                     {item.type === 'before-after' && item.beforeUrl && item.afterUrl && (
-                        <BeforeAfterSlider beforeUrl={item.beforeUrl} afterUrl={item.afterUrl} />
+                        (item.beforeUrl === item.afterUrl)
+                        ? <img src={item.afterUrl} alt={item.description} className="max-w-full max-h-[80vh] object-contain rounded-md" />
+                        : <BeforeAfterSlider beforeUrl={item.beforeUrl} afterUrl={item.afterUrl} />
                     )}
                     {item.type === 'image' && item.imageUrl && (
                         <img src={item.imageUrl} alt={item.description} className="max-w-full max-h-[80vh] object-contain rounded-md" />
