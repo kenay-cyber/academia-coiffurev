@@ -12,7 +12,7 @@ export const galleryImages: GalleryItem[] = [
     { id: 14, type: 'video', description: "L'ambiance ACADEMIA COIFFURE", thumbnailUrl: "https://i.postimg.cc/9DKXxS85/631bd156-d734-4390-814e-a0da68348fd1.jpg", videoUrl: "https://storage.googleapis.com/veed-fast-eu/projects/c6c16f53-eca6-4d70-aafd-fc4bed8f90e5/exports/958d538e-0f0c-4384-b52b-2e9f45d15a51.mp4" },
     
     // Images (Hairstyle Models)
-    { id: 5, type: 'image', description: "Dégradé Parfait", thumbnailUrl: "https://i.postimg.cc/9rxQ9zy1/1.jpg", imageUrl: "https://i.postimg.cc/85zH8MxH/Whats-App-Image-2025-10-25-at-17-17-14.jpg" },
+    { id: 5, type: 'image', description: "Dégradé Parfait", thumbnailUrl: "https://i.postimg.cc/9rxQ9zy1/1.jpg", imageUrl: "https://i.postimg.cc/9rxQ9zy1/1.jpg" },
     { id: 6, type: 'image', description: "Look Classique avec Raie", thumbnailUrl: "https://i.postimg.cc/vcPZnD52/2.jpg", imageUrl: "https://i.postimg.cc/vcPZnD52/2.jpg" },
     { id: 7, type: 'image', description: "Dégradé Américain", thumbnailUrl: "https://i.postimg.cc/Lny8PhjB/3.jpg", imageUrl: "https://i.postimg.cc/Lny8PhjB/3.jpg" },
     { id: 8, type: 'image', description: "Style Locks", thumbnailUrl: "https://i.postimg.cc/0zF5t3W1/818e9a31-d52d-40e7-b63f-5710503f9c71.jpg", imageUrl: "https://i.postimg.cc/0zF5t3W1/818e9a31-d52d-40e7-b63f-5710503f9c71.jpg" },
@@ -22,5 +22,5 @@ export const galleryImages: GalleryItem[] = [
 
     // Product Images
     { id: 9, type: 'image', description: "Kit Soin Barbe & Cheveux", thumbnailUrl: "https://i.postimg.cc/zyVXF5kM/Cantu-Shea-Butter-Men-s-Hair-Beard-Care-Products.jpg", imageUrl: "https://i.postimg.cc/zyVXF5kM/Cantu-Shea-Butter-Men-s-Hair-Beard-Care-Products.jpg" },
-    { id: 10, type: 'image', description: "Accessoires pour Waves", thumbnailUrl: "https://i.postimg.cc/zyVXF5kt/COMMENT-AVOIR-LES-WAVES-EN-PEU-DE-TEMPS.jpg", imageUrl: "https://i.postimg.cc/zyVXF5kt/COMMENT-AVOIR-LES-WAVES-EN-PEU-DE-TEMPS.jpg" }
+    { id: 10, type: 'image', description: "Accessoires pour Waves", thumbnailUrl: "https://i.postimg.cc/85zH8MxH/Whats-App-Image-2025-10-25-at-17-17-14.jpg", imageUrl: "https://i.postimg.cc/85zH8MxH/Whats-App-Image-2025-10-25-at-17-17-14.jpg" }
 ];

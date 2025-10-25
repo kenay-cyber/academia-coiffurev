@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { services } from '../data/services';
@@ -35,6 +34,10 @@ const OrderPage: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const paymentInfo = formData.paymentMethod === 'Paiement à la livraison/prestation'
+      ? ''
+      : `*Numéro pour paiement* : ${formData.paymentNumber}`;
+
     const message = `
 Bonjour, je souhaite passer une commande chez ACADEMIA COIFFURE.
 Voici les détails :
@@ -45,11 +48,12 @@ Voici les détails :
 *Service/Produit* : ${formData.selectedItem}
 *Date souhaitée* : ${formData.desiredDate || 'Non spécifiée'}
 *Mode de paiement* : ${formData.paymentMethod}
-*Numéro pour paiement* : ${formData.paymentNumber}
+${paymentInfo}
 *Commentaires* : ${formData.comments || 'Aucun'}
 --------------------
 Merci de confirmer ma commande.
-    `;
+    `.trim().replace(/\n\s*\n/g, '\n'); // Clean up extra lines
+
     const whatsappUrl = `https://wa.me/243858117644?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -103,12 +107,24 @@ Merci de confirmer ma commande.
               <select id="paymentMethod" name="paymentMethod" value={formData.paymentMethod} onChange={handleChange} required className="mt-1 block w-full bg-gray-800 border-gray-600 rounded-md shadow-sm focus:ring-brand-gold focus:border-brand-gold text-white p-3">
                 <option>Orange Money</option>
                 <option>M-Pesa</option>
+                <option>Paiement à la livraison/prestation</option>
               </select>
             </div>
-            <div>
-              <label htmlFor="paymentNumber" className="block text-sm font-medium text-brand-gold">Numéro utilisé pour le paiement</label>
-              <input type="tel" id="paymentNumber" name="paymentNumber" value={formData.paymentNumber} onChange={handleChange} required className="mt-1 block w-full bg-gray-800 border-gray-600 rounded-md shadow-sm focus:ring-brand-gold focus:border-brand-gold text-white p-3" placeholder="+243..." />
-            </div>
+            {formData.paymentMethod !== 'Paiement à la livraison/prestation' && (
+                <div>
+                  <label htmlFor="paymentNumber" className="block text-sm font-medium text-brand-gold">Numéro utilisé pour le paiement</label>
+                  <input 
+                    type="tel" 
+                    id="paymentNumber" 
+                    name="paymentNumber" 
+                    value={formData.paymentNumber} 
+                    onChange={handleChange} 
+                    required={formData.paymentMethod !== 'Paiement à la livraison/prestation'}
+                    className="mt-1 block w-full bg-gray-800 border-gray-600 rounded-md shadow-sm focus:ring-brand-gold focus:border-brand-gold text-white p-3" 
+                    placeholder="+243..." 
+                   />
+                </div>
+            )}
             <div>
               <label htmlFor="comments" className="block text-sm font-medium text-brand-gold">Commentaires (optionnel)</label>
               <textarea id="comments" name="comments" value={formData.comments} onChange={handleChange} rows={3} className="mt-1 block w-full bg-gray-800 border-gray-600 rounded-md shadow-sm focus:ring-brand-gold focus:border-brand-gold text-white p-3"></textarea>
