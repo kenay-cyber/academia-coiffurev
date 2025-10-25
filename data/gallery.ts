@@ -4,7 +4,7 @@ import { GalleryItem } from '../types';
 export const galleryImages: GalleryItem[] = [
     // Before & After
     { id: 1, type: 'before-after', description: "Transformation Dégradé & Style", thumbnailUrl: "https://i.postimg.cc/nXgVd5Rc/410b0e09-adc5-4c2a-9e84-4ee8d02619f1.jpg", beforeUrl: "https://i.postimg.cc/nXgVd5Rc/410b0e09-adc5-4c2a-9e84-4ee8d02619f1.jpg", afterUrl: "https://i.postimg.cc/nXgVd5Rc/410b0e09-adc5-4c2a-9e84-4ee8d02619f1.jpg" },
-    { id: 2, type: 'before-after', description: "Taille de barbe de précision", thumbnailUrl: "https://i.postimg.cc/Vd7kt5XD/image.jpg", beforeUrl: "https://images.unsplash.com/photo-1530248873435-7314a275338a?q=80&w=800&h=600&fit=crop", afterUrl: "https://i.postimg.cc/Vd7kt5XD/image.jpg" },
+    { id: 2, type: 'before-after', description: "Taille de barbe de précision", thumbnailUrl: "https://i.postimg.cc/2SxbmSbt/1a354b9b-c23e-4b24-ad79-daee99e0d94c.jpg", beforeUrl: "https://images.unsplash.com/photo-1530248873435-7314a275338a?q=80&w=800&h=600&fit=crop", afterUrl: "https://i.postimg.cc/2SxbmSbt/1a354b9b-c23e-4b24-ad79-daee99e0d94c.jpg" },
     
     // Videos
     { id: 3, type: 'video', description: "L'art du dégradé en action", thumbnailUrl: "https://images.pexels.com/videos/7864382/pexels-photo-7864382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", videoUrl: "https://videos.pexels.com/video-files/7864382/7864382-hd_1080_1920_30fps.mp4" },
